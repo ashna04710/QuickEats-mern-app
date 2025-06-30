@@ -1,0 +1,23 @@
+.home-wrapper {
+  background-color: black;
+}
+
+.home-content {
+  background-color: black;
+  padding-top: 0;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.header-section {
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.menu-section,
+.food-section,
+.footer-section {
+  padding: 20px;
+}

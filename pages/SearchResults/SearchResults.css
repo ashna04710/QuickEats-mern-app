@@ -1,0 +1,27 @@
+.search-results {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 60px; /* Pushes the section lower if padding isn't enough */
+}
+
+.search-results h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ffffff22;
+  padding-bottom: 10px;
+  margin-top: 0; /* Ensures no extra gap from browser default */
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.search-results p {
+  font-size: 18px;
+  color: #bbbbbb;
+}

@@ -1,0 +1,149 @@
+/* Container */
+.cart {
+  margin: 80px auto;
+  padding: 30px;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Title Heading */
+.cart > h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Cart Item List */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-details {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-item-details p {
+  margin: 0;
+  color: #444;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-actions button {
+  background: #ff5b00;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cart-actions button:hover {
+  background: #e64a00;
+}
+
+.cart-actions span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Remove Button */
+.cart-item-details > button {
+  background: transparent;
+  border: none;
+  color: #999;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cart-item-details > button:hover {
+  color: #ff5b00;
+}
+
+/* Cart Summary Footer */
+.cart-summary {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+  text-align: right;
+}
+
+.cart-summary p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.cart-summary h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 12px 0;
+}
+
+.cart-summary button {
+  background: #ff5b00;
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cart-summary button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.cart-summary button:hover:enabled {
+  background: #e64a00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart-item-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .cart-actions {
+    margin: 8px 0;
+  }
+  .cart-summary {
+    text-align: center;
+  }
+}
